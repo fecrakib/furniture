@@ -11,6 +11,7 @@ module.exports = {
       backgroundColor:{
         'gray':'#CAA892',
         'green':'#37806B',
+        'chyan':'#646464',
       }
     },
   },
