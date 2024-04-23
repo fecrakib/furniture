@@ -2,21 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banking System</title>
+    <title>Simple Banking System</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Banking System</h2>
+    <h1>Banking System</h1>
+    <div>
         <label for="account">Account Name:</label>
-        <input type="text" id="account" placeholder="Enter account name">
-        <label for="balance">Balance:</label>
-        <input type="number" id="balance" value="0" readonly>
+        <input type="text" id="account">
+    </div>
+    <div>
+        <label for="depositAmount">Deposit Amount:</label>
+        <input type="number" id="depositAmount" placeholder="Enter deposit amount">
         <button id="depositButton">Deposit</button>
+    </div>
+    <div>
+        <label for="withdrawAmount">Withdraw Amount:</label>
+        <input type="number" id="withdrawAmount" placeholder="Enter withdrawal amount">
         <button id="withdrawButton">Withdraw</button>
     </div>
-
-    <script src="index.js"></script>
+    <div>
+        <label for="balance">Balance:</label>
+        <input type="text" id="balance" disabled>
+    </div>
 </body>
+<script src="index.js"></script>
 </html>
